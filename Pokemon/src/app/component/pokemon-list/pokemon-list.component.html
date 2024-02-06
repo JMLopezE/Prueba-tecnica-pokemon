@@ -1,15 +1,15 @@
-
-<div class="container text-center">
-        <div  class="row row-cols-2">
-          @for(poke of pokemonOrganizado; track $index) {
-            <div routerLink="/informacion/{{poke.id}}">  
-                <div>{{poke.name }}</div>
-                <div>{{poke.weight}}</div>
-                <div>{{poke.height}}</div>
-                <div>{{poke.id}}</div>
-                <img src="{{poke.sprites.back_default}}" alt="">
-
+<main>  
+      <div class="container text-center">
+            <div  class="row row-col pokemon_conteiner">
+                  @for(poke of pokemonOrganizado; track $index) {
+                        <div class="col container_2" routerLink="/informacion/{{poke.id}}">  
+                              <img class="img" src="{{poke.sprites.back_default}}" alt="">
+                              <h1 class="poke_name">{{poke.name }}</h1> 
+                              <p class="poke_number"> N°  {{poke.id}}</p>
+                              <p class="poke_weight"> <button type="button" class="btn btn-warning">Peso {{poke.weight}}</button> <button type="button" class="btn btn-danger">Altura  {{ poke.height}}</button>
+                        </div>
+                  }
             </div>
-          }
-       
       </div>
+
+</main>

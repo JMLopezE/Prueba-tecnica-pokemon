@@ -1,8 +1,14 @@
-<div>  
-        <div>{{pokemon.name }}</div>
-        <div>{{pokemon.weight}}</div>
-        <div>{{pokemon.height}}</div>
-        <div>{{pokemon.id}}</div>
-        <img src="{{pokemon.sprites.back_default}}" alt="">
-
+<body >
+    <div class="container text-center rounded-pill">  
+        <div class="rounded-5 rounded-top-0 ">  
+            <p class="poke_number">N° {{pokemon.id}}</p>
+            <img class="img rounded-5" src="{{pokemon.sprites.back_default}}" alt="">
+            <h1 class="poke_name"> {{pokemon.name }}</h1>
+            <p class="poke_weight">Peso {{pokemon.weight}}</p>
+            <p class="poke_height">Altura {{pokemon.height}}</p>
+            
+        
+        </div>
     </div>
+</body>
+   
